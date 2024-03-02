@@ -1,0 +1,35 @@
+{
+  "id": "3a552a6f-5172-49c3-810a-d0db6407f06c",
+  "version": "2.0",
+  "name": "MR",
+  "url": "",
+  "tests": [{
+    "id": "851ea150-6a8a-49ca-879d-3ce6ba3a3522",
+    "name": "MR_temp",
+    "commands": [{
+      "id": "7f851fee-f7e4-450e-8ef7-a763037e6b5b",
+      "comment": "",
+      "command": "open",
+      "target": "https://main.sci.gov.in/collegium-resolutions",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dee28fc1-47ac-4ff6-9bbf-fe2a757481c4",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=//tr[@role='row' and @class='odd'][1]/td/a@href",
+      "targets": [],
+      "value": "pdfUrl"
+    }]
+  }],
+  "suites": [{
+    "id": "eb0d1ba4-04f5-4390-bbfd-85170359b931",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["851ea150-6a8a-49ca-879d-3ce6ba3a3522"]
+  }],
+  "urls": [],
+  "plugins": []
+}
